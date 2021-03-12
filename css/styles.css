@@ -285,43 +285,70 @@ footer p{
 	.toggle-btn {
             display: none;
         }
+
         header nav{
             position: static;
             width: auto;
-            max-height: 20rem;
+            max-height: 8rem;
             overflow: visible;
         }
+
+        hr{
+        	visibility: hidden;
+        }
         
-        header, header-nav, .menu{
+        header, .menu, .menu-btns{
         	display: flex;
-        	flex-direction: row;
-        	align-items: center;
-        }
-        header{
         	justify-content: space-between;
-        }
+        	align-items: center;
+        	flex-direction: row;
+ 		}
+
         header nav{
-        	justify-content: flex-end;
         	width: 80%;
         }
-        .menu-btns{
+
+        .menu{
+        	width: 740px;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		nav{
+			display: flex;
+			justify-content: center;
+		}
+        
+        .menu li{
+        	
+        }
+
+        .menu a{
         	display: flex;
-        	flex-flow: wrap;
-        	justify-content: flex-end;
-	  		align-items: flex-end;
-        	width: 95%;
+        	align-items: center;
         }
 
-        .menu li, .menu-btns li{
-            margin-left: 0.5rem;
-
+        .menu svg{
+        	padding-right: 0.5rem;
+        	width: 2.5rem;
+		    height: 2.5rem;
         }
+       
+
+        .menu-btns{
+        	width: 25%;
+    	}
+
+        .menu-btns li{
+        	margin-right: 2rem;
+        }
+
 /* ************************* section 1 ****************** */
 
-.section-1, .section-2{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	.section-1, .section-2{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 
 	.section-1{
@@ -339,14 +366,17 @@ footer p{
 		align-items: flex-end;
 		height: 60rem;
 	}
+
 	.middle{
 		width: 65rem;
 		padding: 8rem 2rem 3rem 5rem;
 	}
+
 	.middle p{
 		padding-bottom: 0.5rem;
 		padding-top: 0.5rem;
 	}
+
 	.section-2 h3{
 		font-size: 3rem;
 		padding-top: 0.5rem;
@@ -355,31 +385,44 @@ footer p{
 
 /* ************************* section 3 ****************** */
 	.image{
-		background: url(../img/woman.webp) center bottom / no-repeat;
+		background: url(../img/woman.webp) center bottom;
+		background-repeat: no-repeat;
 		padding-left: 25px;
 	}
+
 	.section-3{
   		display: flex;
   		flex-flow: row;
   		align-items: flex-end;
 	}
+
 	.bottom{
 		padding-left: 60px;
 	}
 
 	.boxed{
-	position: absolute;
-	top: 1.75%;
-	left:10%;
-	background-color: #1b1c1b;
-	width: 50rem;
-	height: 9rem;
-	padding-top: 1.5rem;
-	padding-left: 2rem;
-	margin-top: 4rem;
+		position: absolute;
+		top: 1.75%;
+		left:10%;
+		background-color: #1b1c1b;
+		width: 50rem;
+		height: 9rem;
+		padding-top: 1.5rem;
+		padding-left: 2rem;
+		margin-top: 4rem;
 	}
+
 	.section-3 h3{
 		font-size: 3rem;
+	}
+
+/* ************************* FOOTER ****************** */
+	footer h1{
+		font-family: Arial;
+		text-transform: uppercase;
+		font-size: 20rem;
+		color: #000;
+		padding-top: 2rem;
 	}
 }
 @media only screen and (min-width: 1300px){
